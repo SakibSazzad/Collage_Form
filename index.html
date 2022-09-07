@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head width="100%">
+    <title>Form</title>
+    <style>
+     body{
+        background-image: url(images/pexels-ann-h-1762851.jpg);
+     }   
+    </style>
+    <body>
+        <form action="">
+            <table border="0" width="60%" cellspacing="10" cellpadding="10" align="center">
+                <tr>
+                    <td align="center" bgcolor="#0DA587" colspan="2">
+                        <h1>Student Registration Form</h1>
+                    </td>
+                </tr>
+                <tr>
+                    <td colspan="2">
+                        <h3>
+                            Please fill out this form with the required information
+                        </h3>
+                    </td>
+                </tr>
+                <tr>
+                    <td width="50%">
+                        <label for="firstname"> FIRST NAME </label>
+                         <input type="text" id="firstname" size="30" required> 
+                    </td>
+                    <td width="50%">
+                        <label for="lastname"> LAST NAME* </label>
+                         <input type="text" id="lastname" size="30" required> 
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <label for="mail">EMAIL</label>
+                        <input type="email" id="mail" size="30" required>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <label for="number"> CONTACT NUMBER</label>
+                        <input type="tel" id="number" size="20">
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <p>GENDER</p>
+                   <input type="radio" id="male" name="gender">
+                   <label for="male">Male</label><br>
+ 
+ 
+                   <input type="radio" id="female" name="gender">
+                   <label for="female">Female</label><br>
+ 
+ 
+                   <input type="radio" id="others" name="gender">
+                   <label for="others">Female</label><br>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <label for="bday">DATE OF BIRTH</label>
+                        <input type="date" id="bday" required>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <label for="age">AGE(Only16+)</label>
+                        <input type="number" id="age" min="16">
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <h5>CHOOSE YOUR COURSE</h5>
+                        <input type="checkbox" id="cse">
+                        <label for="cse">CSE</label>
+                        <input type="checkbox" id="eee">
+                        <label for="eee">EEE</label>
+                        <input type="checkbox" id="civil">
+                        <label for="civil">CIVIL</label>
+                        <input type="checkbox" id="textile">
+                        <label for="textile">TEXTILE</label>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <h5>SELECT YOUR REGION</h5>
+                        <select>
+                            <option selected>Select Your Country</option>
+                            <option>Bangladesh</option>
+                            <option>India</option>
+                            <option>Pakistan</option>
+                            <option>Nepal</option>
+                            <option>Bhutan</option>
+                            <option disabled>Sri-lanka</option>
+                            <option>America</option>
+                            <option>Canada</option>
+                            <option>Australia</option>
+                        </select>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <label for="photo">UPLOAD YOUR PHOTO</label><br><br>
+                        <input type="file" multiple id="photo">
+                    </td>
+                </tr>
+                <tr>
+                    <td colspan="2">
+                        <label for="address">TYPE YOUR ADDRESS</label><br><br>
+                        <textarea id="address" cols="105" rows="10"></textarea>
+                    </td>
+                </tr>
+                <tr>
+                    <td width="70%">
+                        <input type="reset" value="Reset Form">
+                    </td>
+                    <td width="30%" align="center">
+                        <input type="image" src="images/fun-submit-button.gif" width="70%">
+                    </td>
+                </tr>
+
+            </table>
+        </form>
+    </body>
+</head>
+</html>
